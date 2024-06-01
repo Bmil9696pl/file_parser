@@ -62,21 +62,8 @@ project_root/
 Clone the repository to your local machine:
 
 ```sh
-git clone https://github.com/yourusername/your_project.git
-cd your_project
-```
-
-### Configure Environment Variables
-
-Create a `.env` file in the root of the project and configure the necessary environment variables for your Django and PostgreSQL setup:
-
-```env
-# .env file
-POSTGRES_DB=your_db
-POSTGRES_USER=your_user
-POSTGRES_PASSWORD=your_password
-DJANGO_SECRET_KEY=your_secret_key
-DJANGO_SETTINGS_MODULE=your_project.settings
+git clone https://github.com/Bmil9696pl/file_parser.git
+cd file_parser
 ```
 
 ### Build and Run Docker Containers
@@ -102,23 +89,21 @@ The service provides an endpoint to upload and process files.
 - **Method**: POST
 - **Payload**: Form-data with a file field named `file`.
 
-### Example Request using `curl`:
+You can send files to this endpoint by running the "request.py" file.
+
+### Example Request using `request.py`:
 
 ```sh
-curl -X POST -F "file=@/path/to/your/file.csv" http://localhost:8000/upload_file
+python request.py
 ```
 
 ### Example Response:
 
 ```json
 {
-    "file_type": "CSV",
-    "num_rows": 5,
-    "num_columns": 4,
-    "numeric_means": {
-        "Age": 31.8
-    }
-}
+    "file_type": "JSON", 
+    "num_entries": 5, 
+    "fields": ["name", "email", "phone", "age"]}
 ```
 
 ## Monitoring with Prometheus
