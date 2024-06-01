@@ -85,7 +85,7 @@ This will build the images and start the services defined in `docker-compose.yml
 
 The service provides an endpoint to upload and process files.
 
-- **Endpoint**: `/upload_file`
+- **Endpoint**: `/parse/`
 - **Method**: POST
 - **Payload**: Form-data with a file field named `file`.
 
@@ -119,7 +119,7 @@ global:
 scrape_configs:
   - job_name: 'django'
     static_configs:
-      - targets: ['django:8000']
+      - targets: ['host.docker.internal:8000']
 ```
 
 ## Accessing and Interpreting Metrics
