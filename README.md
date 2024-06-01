@@ -101,9 +101,14 @@ python request.py
 
 ```json
 {
-    "file_type": "JSON", 
-    "num_entries": 5, 
-    "fields": ["name", "email", "phone", "age"]}
+    "file_type": "TXT", 
+    "num_lines": 22, 
+    "num_words": 108, 
+    "num_chars": 799, 
+    "emails": ["alice@example.com", "bob.smith@example.co.uk", "charlie123@example.org"], 
+    "phone_numbers": ["1234567890", "0987654321", "7777777777"], 
+    "names": ["Alice Someone", "Bob Smith", "Charlie Coolguy"]
+}
 ```
 
 ## Monitoring with Prometheus

@@ -1,7 +1,7 @@
 import requests
 
 url = 'http://localhost:8000/parse/'
-file_path = './example.json'
+file_path = './example.txt'
 
 with open(file_path, 'rb') as f:
     files = {'file': f}
