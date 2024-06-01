@@ -5,12 +5,8 @@ from prometheus_client import Counter, Summary
 import time
 from .parser import process_file
 
-# Prometheus metrics
 FILES_PROCESSED = Counter('files_processed_total', 'Total number of files processed')
 FILE_PROCESSING_TIME = Summary('file_processing_time_seconds', 'Time spent processing files')
-
-
-# Create your views here.
 
 @csrf_exempt
 def upload_file(request):
