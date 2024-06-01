@@ -1,0 +1,20 @@
+This is a sample text file for testing the file parsing service.
+It contains multiple lines of text, email addresses, and phone numbers.
+
+Team members:
+Alice Someone
+Bob Smith
+Charlie Coolguy
+
+Emails:
+alice@example.com
+bob.smith@example.co.uk
+charlie123@example.org
+
+Phone numbers:
+1234567890
+0987654321
+7777777777
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+Curabitur lacinia lorem ac nunc fermentum, eget dapibus est varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Proin ullamcorper vehicula dui, at cursus magna hendrerit at.

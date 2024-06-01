@@ -1,0 +1,5 @@
+# Use the official Prometheus image from the Docker Hub
+FROM prom/prometheus:v2.52.0
+
+# Add your Prometheus configuration file
+COPY prometheus.yml /etc/prometheus/prometheus.yml
